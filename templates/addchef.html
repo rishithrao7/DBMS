@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Chef</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add Chef</h2>
+        <form action="/submit_chef" method="post">
+            <label for="chef_id">Chef ID:</label>
+            <input type="number" id="chef_id" name="chef_id" required>
+            
+            <label for="chef_first_name">First Name:</label>
+            <input type="text" id="chef_first_name" name="chef_first_name" required>
+            
+            <label for="chef_last_name">Last Name:</label>
+            <input type="text" id="chef_last_name" name="chef_last_name" required>
+            
+            <label for="chef_date_of_joining">Date of Joining:</label>
+            <input type="date" id="chef_date_of_joining" name="chef_date_of_joining" required>
+            
+            <label for="specialised_cuisine">Specialised Cuisine:</label>
+            <input type="text" id="specialised_cuisine" name="specialised_cuisine" required>
+            
+            <label for="chef_email">Email:</label>
+            <input type="email" id="chef_email" name="chef_email" required>
+            
+            <label for="hotel_id">Hotel ID:</label>
+            <input type="number" id="hotel_id" name="hotel_id" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
